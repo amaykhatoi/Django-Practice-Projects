@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtubr user</title>
+</head>
+<body>
+    <h1>Youtube Users list</h1>
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Name</th>
+            <th>email</th>
+            <th>subscribers</th>
+        </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.sub }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
